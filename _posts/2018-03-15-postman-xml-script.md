@@ -2,7 +2,7 @@
 title: "Postman: Writing Test Scripts with XML"
 excerpt: "Postman supports only JSON syntax when running test scripts. Writing test script is a little bit more complicated for a XML service than for a JSON service."
 last_modified_at: 2018-03-17T11:45:06-05:00
-
+comments: true
 tags: 
   - Postman
   - XML
