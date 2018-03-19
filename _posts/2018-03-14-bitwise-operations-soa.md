@@ -12,7 +12,7 @@ wide: true
 ---
 Sometimes you need to manipulate integers on bit level. Both Oracle Service Bus and Oracle SOA does not have any native solution for bitwise operations. You need to create a custom jar in OSB or you need to use java embedding in Oracle SOA BPEL. 
 
-You can download custom jar file for bitwise operations to use in OSB proxy service. The class file has 7 different methods:
+You can [download custom jar file](/assets/custom/Bitwise-Operations.jar) for bitwise operations to use in OSB proxy service. The class file has 7 different methods:
 
 **BitwiseAND:** Bitwise AND operator compare corresponding bits of two operands. If both bits are 1, it gives 1. If either of the bits is not 1, it gives 0. It's denoted by &.
 ```java
