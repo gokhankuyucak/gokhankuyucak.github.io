@@ -10,11 +10,11 @@ tags:
 toc: false
 wide: true
 ---
-Sometimes you need to manipulate integers on bit level. Both Oracle Service Bus and Oracle SOA does not have any native solution for bitwise operations. You need to create a custom jar in OSB or you need to use java embedding in Oracle SOA bpel. 
+Sometimes you need to manipulate integers on bit level. Both Oracle Service Bus and Oracle SOA does not have any native solution for bitwise operations. You need to create a custom jar in OSB or you need to use java embedding in Oracle SOA BPEL. 
 
 You can download custom jar file for bitwise operations to use in OSB proxy service. The class file has 7 different methods:
 
-**BitwiseAND:** Bitwise AND operator compares corresponding bits of two operands. If both bits are 1, it gives 1. If either of the bits is not 1, it gives 0. It's denoted by &.
+**BitwiseAND:** Bitwise AND operator compare corresponding bits of two operands. If both bits are 1, it gives 1. If either of the bits is not 1, it gives 0. It's denoted by &.
 ```java
 public static int BitwiseAND(int param1, int param2) {
 		int result= param1 & param2;
@@ -48,7 +48,7 @@ public static int BitwiseXOR(int param1, int param2) {
 ```
 
 
-**SignedLeftShift:** This operator shifts a bit pattern to the left by certain number of specified bits, and zero bits are shifted into the low-order positions. It's denoted by <<. 
+**SignedLeftShift:** This operator shifts a bit pattern to the left by the certain number of specified bits, and zero bits are shifted into the low-order positions. It's denoted by <<. 
 ```java
 public static int SignedLeftShift(int param1, int param2) {
 		int result= param1 << param2;
@@ -57,7 +57,7 @@ public static int SignedLeftShift(int param1, int param2) {
 ```
 
 
-**SignedRightShift:** This operator shifts a bit pattern to the right by certain number of specified bits. It's denoted by >>.
+**SignedRightShift:** This operator shifts a bit pattern to the right by the certain number of specified bits. It's denoted by >>.
 ```java
 public static int SignedRightShift(int param1, int param2) {
 		int result= param1 >> param2;
@@ -83,5 +83,5 @@ public static int UnsignedRightShift(int param1, int param2) {
 
 To handle Bitwise Operations in Oracle SOA Suite, you can use java embedding.
 <figure><img src="/assets/images/Jar-Bitwise-Operations-SOA.png">
-	<figcaption>Bitwise Operations in Bpel - Java Embedding Solution</figcaption>
+	<figcaption>Bitwise Operations in BPEL - Java Embedding Solution</figcaption>
 </figure>
