@@ -56,7 +56,7 @@ gibi değişken tanımlamaları yapılabilir.
 
 Bir diğer güzel gelişme ise container tarafında [oldu](http://openjdk.java.net/jeps/8182070), önceden container içerisinde JVM ile çalışan uygulamalarda cpu ve memory tarafında performans problemleri yaşanabiliyordu, her ne kadar containera cpu ve memory limiti koysanız da JVM container içerisinde çalıştığını farketmediğinden bu ayarları yok sayıyordu. Java 10 ile birlikte JVM, container içerisinde çalışıp çalışmadığını anlayabilecek özelliklere sahip oldu, böylece JVM, containera koyulan cpu ve ram limitlerini algılayıp, belirtilen sınırları aşamayacak. 
 
-Örneğin, Java 8 ile containera memory limiti vermeyi deneyelim ve jvm in bu memory limitini kaale alıp almadığına bakalım:
+Örneğin, Java 8 ile containera memory limiti vermeyi deneyelim ve jvm in bu memory limitini kâle alıp almadığına bakalım:
 
 İlk adım jdk-8 containerına 256MB bellek alanı kullanabileceğini söylemek
 ```bash
